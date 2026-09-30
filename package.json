@@ -6,7 +6,7 @@
     "lint:md": "markdownlint-cli2 \"**/*.md\" \"#**/obj/**\" \"#**/bin/**\" \"#node_modules/**\""
   },
   "devDependencies": {
-    "markdownlint-cli2": "0.23.2"
+    "markdownlint-cli2": "0.23.3"
   },
   "overrides": {
     "markdownlint-cli2": {
