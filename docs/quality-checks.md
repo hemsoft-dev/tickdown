@@ -1,6 +1,6 @@
 # Local quality checks
 
-Use PowerShell 7, the exact .NET SDK selected by `global.json`, and Node.js 22 or later on Windows.
+Use PowerShell 7, the exact .NET SDK selected by `global.json`, and Node.js 22.12 or later on Windows.
 
 ```powershell
 npm ci --ignore-scripts
@@ -36,8 +36,10 @@ a newer major release is an update finding, not a vulnerability assertion.
 Markdown is a separate pinned tool, not an MSBuild target. `npm run lint:md`
 checks tracked source documentation and agent guidance, excluding generated
 build and dependency directories. Its dependencies are locked in the npm lockfile.
-The CLI's TOML parser is pinned to smol-toml 1.8.0 to address
+The CLI's TOML parser is pinned to smol-toml 1.9.0 to address
 [GHSA-7w5x-hrqm-74c2](https://github.com/advisories/GHSA-7w5x-hrqm-74c2).
+The INI parser is pinned to ini 6.0.0 so the linter remains compatible with the
+existing CI Node.js 24.12.0 runtime and the documented Node.js minimum.
 Remove that scoped override when the CLI's own dependency accepts the fixed release.
 The runner also executes `npm audit --audit-level=low` for these tooling dependencies.
 
