@@ -1,6 +1,6 @@
 # Local quality checks
 
-Use PowerShell 7, the exact .NET SDK selected by `global.json`, and Node.js 22 or later on Windows.
+Use PowerShell 7, the exact .NET SDK selected by `global.json`, and Node.js 24.21.0 (the pinned CI version) on Windows.
 
 ```powershell
 npm ci --ignore-scripts
