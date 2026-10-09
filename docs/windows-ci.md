@@ -86,7 +86,7 @@ A skipped historical AI-review deployment does not satisfy any step above.
 
 The first successful `main` delivery for commit
 `fab92e591a60c845632556b34b465010f761d4fe` is
-[Windows quality run 35481633605](https://github.com/HemSoft/tickdown/actions/runs/35481633605).
+[Windows quality run 35481633605](https://github.com/hemsoft-dev/tickdown/actions/runs/35481633605).
 The required check is exactly `Required`, reported by the GitHub Actions app.
 The active `Main branch quality and review` ruleset requires that check from
 GitHub Actions, an up-to-date pull request, resolved review conversations and
@@ -106,14 +106,14 @@ Measured job durations on that run were:
 | Required | 19s |
 
 Final qualification completed in 4m 45s. The run published
-[coverage-function-risk](https://github.com/HemSoft/tickdown/actions/runs/35481633605/artifacts/10596340169)
+[coverage-function-risk](https://github.com/hemsoft-dev/tickdown/actions/runs/35481633605/artifacts/10596340169)
 and
-[countdown-mutation](https://github.com/HemSoft/tickdown/actions/runs/35481633605/artifacts/10595993460)
+[countdown-mutation](https://github.com/hemsoft-dev/tickdown/actions/runs/35481633605/artifacts/10595993460)
 artifacts. The mutation candidate record matches the delivered commit and reports
 100.00%, with 44 killed and zero surviving mutants.
 
 The ruleset fail/pass proof used
-[run 35481964040](https://github.com/HemSoft/tickdown/actions/runs/35481964040).
+[run 35481964040](https://github.com/hemsoft-dev/tickdown/actions/runs/35481964040).
 A temporary change made the required-job policy test fail. `Quality policy`
 reported failure after 2m 38s of job execution, `Required` failed after every
 child completed, and GitHub reported pull request #30 as blocked. The next
